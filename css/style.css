@@ -96,9 +96,7 @@ body{
     align-items: center;
 }
 
-.banner-text{
-    
-}
+
 
 .banner-text h1{
     font-size: 64px;
@@ -144,6 +142,7 @@ body{
    
 
 }
+
 .blog-image{
     text-align: center;
 }
@@ -272,10 +271,7 @@ article:hover{
     animation: animated 3s ease-in-out infinite .5s;
 }
 
-.live-video-content{
-  
-    
-}
+
 
 .icon-content h3{
     font-size: 40px;
@@ -320,7 +316,7 @@ article:hover{
 }
 .latest-news-items{
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(3 , 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
@@ -351,11 +347,13 @@ article:hover{
     color:#0A0826 ;
     font-size: 24px;
     font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .time p{
     color:#0A0826 ;
     font-size: 16px;
+    margin-left: 10px;
 }
 
 .time p i{
@@ -367,14 +365,189 @@ article:hover{
 /* contact section start */
 
 #contact-section{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    background-color:#058f56;
+    
 }
 
 .contact-form{
+    text-align: center;
     max-width: 800px;
-    min-width: 600px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 20px 0;
+    background-color: #fff;
+    padding: 100px;
+
 }
 
+.subject input{
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    box-shadow:  10px 7px 10px 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.full-name input{
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    box-shadow:  10px 7px 10px 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+
+.comment  textarea{
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    box-shadow:  10px 7px 10px 0;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.full-name input:focus, 
+.comment textarea:focus, 
+.subject input:focus{
+    outline: 0;
+}
+
+
+.submit button{
+    width: 170px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border: 1px solid #E02C6D;
+    background-color: #E02C6D;
+    margin-top: 30px;
+    font-size: 16;
+    font-weight: 500;
+    color: #fff;
+    transition: transform 2s ease;
+}
+
+.submit button:hover{
+    transform:scale(1.1) ;
+}
+
+/* footer */
+footer{
+    padding: 100px 0;
+}
+
+.footer-area{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-solial-icon{
+    text-align: center;
+    margin: 30px 0;
+
+}
+
+.footer-solial-icon a{
+    padding: 0 10px;
+}
+
+.footer-solial-icon a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid  #969BAB;;
+    background-color: #969BAB;
+    border-radius: 50%;
+    font-size: 20px;
+    color:#fff ;
+}
+
+.footer-copy-right{
+    text-align: center;
+}
+
+
+/* RESPONSIVE PART */
+
+/* media queriess  */
+
+/* MOBILE SCREEN  */
+
+@media(max-width:688px) {
+.banner-items{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    grid-row-gap: 30px;
+}
+.blog-items{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);        
+    grid-row-gap: 30px;
+       
+    
+}
+
+.highlights-items{
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+    grid-row-gap: 30px;
+}
+
+.latest-news-items{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    grid-row-gap: 30px;
+}
+
+.banner-text h1{
+    font-size: 44px;
+}
+
+.highlight-text h2{
+    font-size: 36px;
+}
+
+    
+}
+
+
+/* TEBLATE SCREEN */
+
+@media (min-width:689px) and ( max-width:991px) {
+    .banner-items{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-row-gap: 30px;
+    }
+    .blog-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+       
+    
+    }
+
+    .highlights-items{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-row-gap: 30px;
+    }
+
+    .latest-news-items{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+       
+        grid-row-gap: 30px;
+    }
+
+
+    .banner-text h1{
+        font-size: 50px;
+    }
+
+
+    
+}
